@@ -1362,3 +1362,33 @@ body[data-page="services"] .btn-secondary {
 .program-steps-preview strong{color:#d5d5d5;}
 @media (max-width:900px){.service-card-grid{grid-template-columns:1fr;}.programs-grid{grid-template-columns:1fr;}}
 @media (min-width:901px){.service-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+
+
+/* SPA programs image ratio updates */
+body[data-page="services"] .service-program-card .program-card-image {
+  aspect-ratio: 3 / 4;
+  height: auto;
+}
+
+body[data-page="services"] .service-program-card .program-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body[data-page="services"] #serviceModal.program-modal .service-modal-grid {
+  grid-template-columns: 1fr;
+}
+
+body[data-page="services"] #serviceModal.program-modal .service-media {
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+}
+
+body[data-page="services"] #serviceModal.program-modal .service-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}

@@ -244,6 +244,15 @@ function fillServiceModal(item, categoryText, isProgram = false) {
   const title = getLocalized(item.title);
   const duration = item.duration ? `${t('services.duration')}: ${item.duration}` : '';
 
+  const modal = $('#serviceModal');
+  modal?.classList.toggle('program-modal', isProgram);
+
+  const media = $('#serviceModalMedia');
+  if (media) {
+    media.classList.remove('is-missing');
+    media.innerHTML = imageTag(item.image, title, isProgram ? 'modal-program-image' : 'modal-service-image');
+  }
+
   $('#serviceModalCategory').textContent = categoryText;
   $('#serviceModalTitle').textContent = title;
   $('#serviceModalDuration').textContent = duration;
