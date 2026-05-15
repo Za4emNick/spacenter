@@ -1559,7 +1559,7 @@ const spaPrograms = [
   },
   {
     "id": "program-3",
-    "duration": "90 min",
+    "duration": "120 min",
     "image": "./gallery/package-premium-care.webp",
     "title": {"en":"Program 3","ru":"Программа 3","tr":"Program 3"},
     "shortDescription": {"en":"Extended wellness program with salt peeling and 45-minute medical massage for maximum effect.","ru":"Расширенная wellness-программа с солевым пилингом и медицинским массажем 45 минут для максимального эффекта.","tr":"Maksimum etki için tuz peelingi ve 45 dakikalık medikal masaj içeren genişletilmiş wellness programı."},
