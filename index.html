@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zen Spa Center — premium spa, hammam and massage experience in Kemer and Beldibi hotels." />
+  <title>Zen Spa Center | Premium Spa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-page="home">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./index.html" aria-label="Zen Spa Center">
+        <span class="brand-logo-wrap"><img class="brand-logo" src="./logo.png" alt="Zen Spa Center logo"></span>
+        <span class="brand-name">Zen Spa Center</span>
+      </a>
+      <div class="header-right">
+        <div class="language-pills" id="languagePills" aria-label="Language switcher">
+          <button data-lang-switch="ru">🇷🇺 RU</button>
+          <button data-lang-switch="ar">🇸🇦 AR</button>
+          <button data-lang-switch="tr">🇹🇷 TR</button>
+          <button data-lang-switch="en">🇬🇧 EN</button>
+          <button data-lang-switch="de">🇩🇪 DE</button>
+          <button data-lang-switch="pl">🇵🇱 PL</button>
+          <button data-lang-switch="fr">🇫🇷 FR</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Change language" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3 12h18M12 3c2.6 2.2 4 5.5 4 9s-1.4 6.8-4 9M12 3c-2.6 2.2-4 5.5-4 9s1.4 6.8 4 9"></path>
+            <path d="M8 8h4M8 16h8"></path>
+          </svg>
+        </button>
+      </div>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="./index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="./services.html" data-i18n="nav.services">Services</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="soft-glow glow-one"></div>
+      <div class="soft-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Hotel spa network in Kemer & Beldibi</span>
+          <h1 data-i18n="hero.title">Premium Spa</h1>
+          <p class="hero-text" data-i18n="hero.text">Comfort, privacy and quality relaxation for every guest.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary wa-trigger" type="button" data-i18n="buttons.bookWhatsApp">Book via WhatsApp</button>
+            <a class="btn btn-secondary" href="./services.html" data-i18n="buttons.viewServices">View services</a>
+          </div>
+          <div class="mini-stats" aria-label="Spa highlights">
+            <div><strong>25+</strong><span data-i18n="stats.years">years</span></div>
+            <div><strong>5</strong><span data-i18n="stats.hotels">hotels</span></div>
+            <div><strong>50+</strong><span data-i18n="stats.hours">employees</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-card-image" src="/massage1.webp" alt="Massage at Zen Spa Center">
+          <div class="hero-note">
+            <strong data-i18n="hero.noteTitle">Daily 08:00–20:30</strong>
+            <span data-i18n="hero.noteText">Choose your hotel and reserve in one message.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section">
+      <div class="container editorial-grid">
+        <div>
+          <span class="eyebrow" data-i18n="about.eyebrow">About us</span>
+          <h2 class="section-title" data-i18n="about.title">A calm spa space inside selected resort hotels.</h2>
+        </div>
+        <div class="copy-block">
+          <p data-i18n="about.p1">Zen Spa Center is a hotel spa network in Kemer and Beldibi, built around relaxation, privacy and attentive service.</p>
+          <p data-i18n="about.p2">Our treatments combine Turkish hammam rituals, professional massage techniques and modern body care in a clean, quiet atmosphere.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact-section why-choose-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="why.eyebrow">Why guests choose us</span>
+          <h2 class="section-title" data-i18n="why.title">Comfort, privacy and quality rest.</h2>
+        </div>
+        <div class="why-grid" id="featureGrid"></div>
+      </div>
+    </section>
+
+    <section class="section locations-section">
+      <div class="container location-panel">
+        <div>
+          <span class="eyebrow" data-i18n="hotels.eyebrow">Our locations</span>
+          <h2 class="section-title" data-i18n="hotels.title">We work in selected hotels.</h2>
+          <p class="section-subtitle" data-i18n="hotels.subtitle">Zen Spa Center operates in hotels across Kemer and Beldibi:</p>
+        </div>
+        <ul class="location-list" id="locationList"></ul>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-head gallery-head">
+          <div>
+            <span class="eyebrow" data-i18n="gallery.eyebrow">Gallery</span>
+            <h2 class="section-title" data-i18n="gallery.title">Atmosphere of calm and privacy.</h2>
+          </div>
+          <p class="section-subtitle" data-i18n="gallery.subtitle">A small preview of the spa mood. Tap any image to open it full screen.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container">
+        <div class="final-card">
+          <span class="eyebrow">Zen Spa Center</span>
+          <h2 data-i18n="cta.title">Ready to relax today?</h2>
+          <p data-i18n="cta.subtitle">Choose your hotel, send one message and we will help you select the right treatment and time.</p>
+          <button class="btn btn-primary wa-trigger" type="button" data-i18n="buttons.reserveNow">Reserve now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Zen Spa Center</strong>
+        <p data-i18n="footer.text">Premium spa network in Kemer and Beldibi hotels.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html" data-i18n="nav.home">Home</a>
+        <a href="./services.html" data-i18n="nav.services">Services</a>
+      </div>
+    </div>
+    <p class="footer-credit"><span data-i18n="footer.credit">Сайт сделал Дмитрий Бондарев</span> — <a href="https://bond-dev.vercel.app/" target="_blank" rel="noopener noreferrer">Dmitrii Bondarev</a></p>
+  </footer>
+
+  <div class="booking-bar end-only">
+    <div class="booking-copy">
+      <strong data-i18n="bar.title">Ready to relax?</strong>
+      <span data-i18n="bar.subtitle">Choose your hotel and book via WhatsApp.</span>
+    </div>
+    <button class="btn btn-primary wa-trigger" type="button" data-i18n="buttons.bookWhatsApp">Book via WhatsApp</button>
+  </div>
+
+  <div class="modal-overlay" id="hotelModal" aria-hidden="true">
+    <div class="modal-card hotel-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">×</button>
+      <span class="eyebrow">WhatsApp</span>
+      <h3 data-i18n="hotelModal.title">Choose your hotel</h3>
+      <p data-i18n="hotelModal.subtitle">After selecting a hotel, WhatsApp will open with a ready message.</p>
+      <div class="hotel-options" id="hotelOptions"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="galleryModal" aria-hidden="true">
+    <div class="modal-card gallery-modal" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close gallery">×</button>
+      <button class="gallery-nav prev" id="galleryPrev" type="button" aria-label="Previous image">←</button>
+      <img id="galleryStageImage" src="" alt="Spa gallery image">
+      <button class="gallery-nav next" id="galleryNext" type="button" aria-label="Next image">→</button>
+    </div>
+  </div>
+
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
