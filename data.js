@@ -1,5 +1,5 @@
 const siteConfig = {
-  "whatsappFallback": "905010399572"
+  "whatsappFallback": "905538270765"
 };
 
 const hotelItems = [
@@ -7,7 +7,7 @@ const hotelItems = [
     "id": "saint-star-kemer-hotel",
     "name": "Saint Star Kemer Hotel",
     "location": "Kemer, Antalya",
-    "phone": "905010399572"
+    "phone": "905538270765"
   }
 ];
 
@@ -1586,8 +1586,8 @@ const spaPrograms = [
     "duration": "75 min",
     "image": "./gallery/package-traditional-hammam.webp",
     "title": {"en":"Program 1","ru":"Программа 1","tr":"Program 1"},
-    "shortDescription": {"en":"Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
-    "fullDescription": {"en":"Program 1 includes: Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Программа 1 включает: Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Program 1 içeriği: Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
+    "shortDescription": {"en":"Traditional hammam program with classic massage for deep relaxation and skin renewal.","ru":"Традиционная хаммам-программа с классическим массажем для глубокого расслабления и обновления кожи.","tr":"Derin rahatlama ve cilt yenilenmesi için klasik masajlı geleneksel hamam programı."},
+    "fullDescription": {"en":"A balanced spa ritual designed to relax the body, refresh the skin and finish with a soothing classic massage.","ru":"Сбалансированный спа-ритуал для расслабления тела, обновления кожи и мягкого завершения классическим массажем.","tr":"Vücudu rahatlatmak, cildi tazelemek ve klasik masajla tamamlamak için dengeli bir spa ritüeli."},
     "steps": ["sauna", "peeling", "foamMassage", "classicMassage30", "algenMask", "tea"]
   },
   {
@@ -1595,8 +1595,8 @@ const spaPrograms = [
     "duration": "90 min",
     "image": "./gallery/package-aroma-care.webp",
     "title": {"en":"Program 2","ru":"Программа 2","tr":"Program 2"},
-    "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
-    "fullDescription": {"en":"Program 2 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Программа 2 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Program 2 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
+    "shortDescription": {"en":"Intensive recovery program with salt peeling and focused 30-minute medical massage.","ru":"Интенсивная восстановительная программа с солевым пилингом и направленным медицинским массажем 30 минут.","tr":"Tuz peelingi ve odaklı 30 dakikalık medikal masaj içeren yoğun toparlanma programı."},
+    "fullDescription": {"en":"An energizing spa session that combines mineral exfoliation with a therapeutic massage to release tension.","ru":"Энергичная спа-сессия, сочетающая минеральное отшелушивание и терапевтический массаж для снятия напряжения.","tr":"Gerginliği azaltmak için mineral peelingi ve terapötik masajı birleştiren canlandırıcı spa seansı."},
     "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage30", "algenMask", "tea"]
   },
   {
@@ -1604,8 +1604,8 @@ const spaPrograms = [
     "duration": "90 min",
     "image": "./gallery/package-premium-care.webp",
     "title": {"en":"Program 3","ru":"Программа 3","tr":"Program 3"},
-    "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
-    "fullDescription": {"en":"Program 3 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Программа 3 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Program 3 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
+    "shortDescription": {"en":"Extended wellness program with salt peeling and 45-minute medical massage for maximum effect.","ru":"Расширенная wellness-программа с солевым пилингом и медицинским массажем 45 минут для максимального эффекта.","tr":"Maksimum etki için tuz peelingi ve 45 dakikalık medikal masaj içeren genişletilmiş wellness programı."},
+    "fullDescription": {"en":"A premium-length treatment focused on deep recovery, with more massage time and complete body relaxation.","ru":"Премиальная по длительности процедура с акцентом на глубокое восстановление, увеличенное время массажа и полное расслабление.","tr":"Daha uzun masaj süresi ve tam rahatlama sunan, derin toparlanmaya odaklı premium bir bakım."},
     "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage45", "algenMask", "tea"]
   }
 ];
