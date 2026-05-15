@@ -1,7 +1,7 @@
 const SPA_LANGS = ['ru', 'ar', 'tr', 'en', 'de', 'pl', 'fr'];
 const LANG_LABELS = { ru: 'RU', ar: 'AR', tr: 'TR', en: 'EN', de: 'DE', pl: 'PL', fr: 'FR' };
 
-let currentLang = localStorage.getItem('spaCenterLang') || 'en';
+let currentLang = localStorage.getItem('spaCenterLang') || localStorage.getItem('zenSpaLang') || 'en';
 let selectedService = null;
 let currentGalleryIndex = 0;
 let currentModalImageClickHandler = null;
@@ -324,7 +324,7 @@ function buildWhatsAppUrl(service) {
   const wa = t('wa');
   const lines = [wa.general];
   if (service) lines.push(`${wa.service}: ${getLocalized(service.title)}`);
-  return `https://wa.me/905538270765?text=${encodeURIComponent(lines.join("\n"))}`;
+  return `https://wa.me/905010399572?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 
@@ -365,12 +365,35 @@ function initBookingBarVisibility() {
   toggle();
 }
 
+
+function applyTheme(theme) {
+  const nextTheme = theme === 'light' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', nextTheme);
+  const toggle = $('#themeToggle');
+  if (toggle) {
+    toggle.setAttribute('aria-label', nextTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+    toggle.setAttribute('aria-pressed', String(nextTheme === 'light'));
+  }
+}
+
+function initTheme() {
+  const stored = localStorage.getItem('theme');
+  applyTheme(stored || 'dark');
+  $('#themeToggle')?.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    applyTheme(next);
+  });
+}
+
 function init() {
+  initTheme();
   applyTranslations();
   $$('[data-lang-switch]').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.langSwitch)));
   $$('.wa-trigger').forEach((btn) => btn.addEventListener('click', () => {
     selectedService = null;
-    window.open('https://wa.me/905538270765', '_blank', 'noopener,noreferrer');
+    window.open('https://wa.me/905010399572', '_blank', 'noopener,noreferrer');
   }));
   $$('[data-close-modal]').forEach((btn) => btn.addEventListener('click', closeModals));
   $$('.modal-overlay').forEach((overlay) => overlay.addEventListener('click', (event) => {
