@@ -324,7 +324,7 @@ function buildWhatsAppUrl(service) {
   const wa = t('wa');
   const lines = [wa.general];
   if (service) lines.push(`${wa.service}: ${getLocalized(service.title)}`);
-  return `https://wa.me/905010399572?text=${encodeURIComponent(lines.join("\n"))}`;
+  return `https://wa.me/905538270765?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 
@@ -370,7 +370,7 @@ function init() {
   $$('[data-lang-switch]').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.langSwitch)));
   $$('.wa-trigger').forEach((btn) => btn.addEventListener('click', () => {
     selectedService = null;
-    window.open('https://wa.me/905010399572', '_blank', 'noopener,noreferrer');
+    window.open('https://wa.me/905538270765', '_blank', 'noopener,noreferrer');
   }));
   $$('[data-close-modal]').forEach((btn) => btn.addEventListener('click', closeModals));
   $$('.modal-overlay').forEach((overlay) => overlay.addEventListener('click', (event) => {
