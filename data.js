@@ -4,83 +4,61 @@ const siteConfig = {
 
 const hotelItems = [
   {
-    "id": "imperial-sunland",
-    "name": "Imperial Sunland Resort & Spa",
-    "location": "Beldibi, Kemer, Antalya"
-  },
-  {
-    "id": "grand-ring",
-    "name": "Grand Ring Hotel",
-    "location": "Beldibi, Kemer, Antalya"
-  },
-  {
-    "id": "dosinia",
-    "name": "Dosinia Luxury Resort",
-    "location": "Beldibi, Kemer, Antalya",
-    "phone": "905353756969"
-  },
-  {
-    "id": "baia",
-    "name": "Baia Salima Kemer",
-    "location": "Beldibi, Kemer, Antalya",
+    "id": "saint-star-kemer-hotel",
+    "name": "Saint Star Kemer Hotel",
+    "location": "Kemer, Antalya",
     "phone": "905010399572"
-  },
-  {
-    "id": "gypsophila",
-    "name": "Gypsophila Club Marine",
-    "location": "Beldibi, Kemer, Antalya",
-    "phone": "905370176311"
   }
 ];
 
 const galleryItems = [
   {
     "src": "/images/gallery/gallery-01.jpg",
-    "title": "Zen Spa 01"
+    "title": "Spa Center Kemer 01"
   },
   {
     "src": "/images/gallery/gallery-02.jpg",
-    "title": "Zen Spa 02"
+    "title": "Spa Center Kemer 02"
   },
   {
     "src": "/images/gallery/gallery-03.jpg",
-    "title": "Zen Spa 03"
+    "title": "Spa Center Kemer 03"
   },
   {
     "src": "/images/gallery/gallery-04.jpg",
-    "title": "Zen Spa 04"
+    "title": "Spa Center Kemer 04"
   },
   {
     "src": "/images/gallery/gallery-05.jpg",
-    "title": "Zen Spa 05"
+    "title": "Spa Center Kemer 05"
   },
   {
     "src": "/images/gallery/gallery-06.jpg",
-    "title": "Zen Spa 06"
+    "title": "Spa Center Kemer 06"
   },
   {
     "src": "/images/gallery/gallery-07.jpg",
-    "title": "Zen Spa 07"
+    "title": "Spa Center Kemer 07"
   },
   {
     "src": "/images/gallery/gallery-08.jpg",
-    "title": "Zen Spa 08"
+    "title": "Spa Center Kemer 08"
   },
   {
     "src": "/images/gallery/gallery-09.jpg",
-    "title": "Zen Spa 09"
+    "title": "Spa Center Kemer 09"
   },
   {
     "src": "/images/gallery/gallery-10.jpg",
-    "title": "Zen Spa 10"
+    "title": "Spa Center Kemer 10"
   },
   {
     "src": "/images/gallery/gallery-11.jpg",
-    "title": "Zen Spa 11"
+    "title": "Spa Center Kemer 11"
   },
   {
     "src": "/images/gallery/gallery-12.jpg",
-    "title": "Zen Spa 12"
+    "title": "Spa Center Kemer 12"
   }
 ];
 
@@ -1604,197 +1582,31 @@ const stepTranslations = {
 
 const spaPrograms = [
   {
-    "id": "package-1-traditional-hammam",
-    "image": "/gallery/package-traditional-hammam.webp",
+    "id": "program-1",
+    "duration": "75 min",
+    "image": "./gallery/package-traditional-hammam.webp",
+    "title": {"en":"Program 1 — 75 min","ru":"Программа 1 — 75 мин","tr":"Program 1 — 75 dk"},
+    "shortDescription": {"en":"Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
+    "fullDescription": {"en":"Program 1 includes: Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Программа 1 включает: Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Program 1 içeriği: Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
+    "steps": ["sauna", "peeling", "foamMassage", "classicMassage30", "algenMask", "tea"]
+  },
+  {
+    "id": "program-2",
     "duration": "90 min",
-    "title": {
-      "en": "Package 1 — Traditional Hammam Program",
-      "ru": "Пакет 1 — Традиционная программа хаммам",
-      "tr": "Paket 1 — Geleneksel Hamam Programı",
-      "ar": "الباقة 1 — برنامج الحمام التقليدي",
-      "de": "Paket 1 — Traditionelles Hammam-Programm",
-      "pl": "Pakiet 1 — Tradycyjny program hammam",
-      "fr": "Forfait 1 — Programme hammam traditionnel"
-    },
-    "description": {
-      "en": "A classic 90-minute hammam ritual for guests who want clean skin, light relaxation and a traditional Turkish spa experience.",
-      "ru": "Классический 90-минутный хаммам-ритуал для тех, кто хочет чистую кожу, лёгкое расслабление и традиционный турецкий спа-опыт.",
-      "tr": "Temiz bir cilt, hafif rahatlama ve geleneksel Türk spa deneyimi isteyen misafirler için 90 dakikalık klasik hamam ritüeli.",
-      "ar": "طقس حمام كلاسيكي لمدة 90 دقيقة لمن يرغب في بشرة نظيفة واسترخاء خفيف وتجربة سبا تركية تقليدية.",
-      "de": "Ein klassisches 90-minütiges Hammam-Ritual für Gäste, die reine Haut, leichte Entspannung und ein traditionelles türkisches Spa-Erlebnis wünschen.",
-      "pl": "Klasyczny 90-minutowy rytuał hammam dla osób, które chcą czystej skóry, lekkiego relaksu i tradycyjnego tureckiego doświadczenia spa.",
-      "fr": "Un rituel hammam classique de 90 minutes pour une peau propre, une détente légère et une expérience spa turque traditionnelle."
-    },
-    "steps": [
-      "saunaSteamroom",
-      "peeling",
-      "foamMassage",
-      "classicMassage30",
-      "faceMask"
-    ],
-    "shortDescription": {
-      "en": "A classic 90-minute hammam ritual for guests who want clean skin, light relaxation and a traditional Turkish spa experience.",
-      "ru": "Классический 90-минутный хаммам-ритуал для тех, кто хочет чистую кожу, лёгкое расслабление и традиционный турецкий спа-опыт.",
-      "tr": "Temiz bir cilt, hafif rahatlama ve geleneksel Türk spa deneyimi isteyen misafirler için 90 dakikalık klasik hamam ritüeli.",
-      "ar": "طقس حمام كلاسيكي لمدة 90 دقيقة لمن يرغب في بشرة نظيفة واسترخاء خفيف وتجربة سبا تركية تقليدية.",
-      "de": "Ein klassisches 90-minütiges Hammam-Ritual für Gäste, die reine Haut, leichte Entspannung und ein traditionelles türkisches Spa-Erlebnis wünschen.",
-      "pl": "Klasyczny 90-minutowy rytuał hammam dla osób, które chcą czystej skóry, lekkiego relaksu i tradycyjnego tureckiego doświadczenia spa.",
-      "fr": "Un rituel hammam classique de 90 minutes pour une peau propre, une détente légère et une expérience spa turque traditionnelle."
-    },
-    "fullDescription": {
-      "en": "A classic 90-minute hammam ritual for guests who want clean skin, light relaxation and a traditional Turkish spa experience.",
-      "ru": "Классический 90-минутный хаммам-ритуал для тех, кто хочет чистую кожу, лёгкое расслабление и традиционный турецкий спа-опыт.",
-      "tr": "Temiz bir cilt, hafif rahatlama ve geleneksel Türk spa deneyimi isteyen misafirler için 90 dakikalık klasik hamam ritüeli.",
-      "ar": "طقس حمام كلاسيكي لمدة 90 دقيقة لمن يرغب في بشرة نظيفة واسترخاء خفيف وتجربة سبا تركية تقليدية.",
-      "de": "Ein klassisches 90-minütiges Hammam-Ritual für Gäste, die reine Haut, leichte Entspannung und ein traditionelles türkisches Spa-Erlebnis wünschen.",
-      "pl": "Klasyczny 90-minutowy rytuał hammam dla osób, które chcą czystej skóry, lekkiego relaksu i tradycyjnego tureckiego doświadczenia spa.",
-      "fr": "Un rituel hammam classique de 90 minutes pour une peau propre, une détente légère et une expérience spa turque traditionnelle."
-    }
+    "image": "./gallery/package-aroma-care.webp",
+    "title": {"en":"Program 2 — 90 min","ru":"Программа 2 — 90 мин","tr":"Program 2 — 90 dk"},
+    "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
+    "fullDescription": {"en":"Program 2 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Программа 2 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Program 2 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
+    "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage30", "algenMask", "tea"]
   },
   {
-    "id": "package-2-aroma-care",
-    "image": "/gallery/package-aroma-care.webp",
-    "duration": "2 hour",
-    "title": {
-      "en": "Package 2 — Aroma Care Program",
-      "ru": "Пакет 2 — Арома-программа ухода",
-      "tr": "Paket 2 — Aroma Bakım Programı",
-      "ar": "الباقة 2 — برنامج العناية العطرية",
-      "de": "Paket 2 — Aroma-Pflegeprogramm",
-      "pl": "Pakiet 2 — Program pielęgnacji aromatycznej",
-      "fr": "Forfait 2 — Programme soin aromatique"
-    },
-    "description": {
-      "en": "A 2-hour spa program with coffee peeling and aroma massage. A good choice for guests who want more softness, fragrance and relaxation.",
-      "ru": "Двухчасовая программа с кофейным пилингом и арома-массажем. Хороший выбор для тех, кто хочет больше мягкости, аромата и расслабления.",
-      "tr": "Kahve peelingi ve aroma masajı içeren 2 saatlik spa programı. Daha fazla yumuşaklık, koku ve rahatlama isteyenler için iyi bir seçim.",
-      "ar": "برنامج سبا لمدة ساعتين مع تقشير القهوة والتدليك العطري. خيار مناسب لمن يرغب في نعومة ورائحة واسترخاء أكثر.",
-      "de": "Ein 2-stündiges Spa-Programm mit Kaffee-Peeling und Aroma-Massage. Ideal für mehr Weichheit, Duft und Entspannung.",
-      "pl": "Dwugodzinny program spa z peelingiem kawowym i masażem aromatycznym. Dobry wybór dla osób, które chcą więcej miękkości, zapachu i relaksu.",
-      "fr": "Un programme spa de 2 heures avec gommage au café et massage aromatique. Idéal pour plus de douceur, de parfum et de détente."
-    },
-    "steps": [
-      "saunaSteamroom",
-      "coffeePeeling",
-      "foamMassage",
-      "aromaMassage45",
-      "faceMask"
-    ],
-    "shortDescription": {
-      "en": "A 2-hour spa program with coffee peeling and aroma massage. A good choice for guests who want more softness, fragrance and relaxation.",
-      "ru": "Двухчасовая программа с кофейным пилингом и арома-массажем. Хороший выбор для тех, кто хочет больше мягкости, аромата и расслабления.",
-      "tr": "Kahve peelingi ve aroma masajı içeren 2 saatlik spa programı. Daha fazla yumuşaklık, koku ve rahatlama isteyenler için iyi bir seçim.",
-      "ar": "برنامج سبا لمدة ساعتين مع تقشير القهوة والتدليك العطري. خيار مناسب لمن يرغب في نعومة ورائحة واسترخاء أكثر.",
-      "de": "Ein 2-stündiges Spa-Programm mit Kaffee-Peeling und Aroma-Massage. Ideal für mehr Weichheit, Duft und Entspannung.",
-      "pl": "Dwugodzinny program spa z peelingiem kawowym i masażem aromatycznym. Dobry wybór dla osób, które chcą więcej miękkości, zapachu i relaksu.",
-      "fr": "Un programme spa de 2 heures avec gommage au café et massage aromatique. Idéal pour plus de douceur, de parfum et de détente."
-    },
-    "fullDescription": {
-      "en": "A 2-hour spa program with coffee peeling and aroma massage. A good choice for guests who want more softness, fragrance and relaxation.",
-      "ru": "Двухчасовая программа с кофейным пилингом и арома-массажем. Хороший выбор для тех, кто хочет больше мягкости, аромата и расслабления.",
-      "tr": "Kahve peelingi ve aroma masajı içeren 2 saatlik spa programı. Daha fazla yumuşaklık, koku ve rahatlama isteyenler için iyi bir seçim.",
-      "ar": "برنامج سبا لمدة ساعتين مع تقشير القهوة والتدليك العطري. خيار مناسب لمن يرغب في نعومة ورائحة واسترخاء أكثر.",
-      "de": "Ein 2-stündiges Spa-Programm mit Kaffee-Peeling und Aroma-Massage. Ideal für mehr Weichheit, Duft und Entspannung.",
-      "pl": "Dwugodzinny program spa z peelingiem kawowym i masażem aromatycznym. Dobry wybór dla osób, które chcą więcej miękkości, zapachu i relaksu.",
-      "fr": "Un programme spa de 2 heures avec gommage au café et massage aromatique. Idéal pour plus de douceur, de parfum et de détente."
-    }
-  },
-  {
-    "id": "package-3-premium-care",
-    "image": "/gallery/package-premium-care.webp",
-    "duration": "2 hour 30 min",
-    "title": {
-      "en": "Package 3 — Premium Care",
-      "ru": "Пакет 3 — Premium Care",
-      "tr": "Paket 3 — Premium Bakım",
-      "ar": "الباقة 3 — العناية الفاخرة",
-      "de": "Paket 3 — Premium Care",
-      "pl": "Pakiet 3 — Premium Care",
-      "fr": "Forfait 3 — Soin Premium"
-    },
-    "description": {
-      "en": "A deeper 2.5-hour care program with salt room, salt peeling, medical massage and a premium face mask option.",
-      "ru": "Более глубокая программа ухода на 2,5 часа: соляная комната, солевой пилинг, медицинский массаж и премиальная маска на выбор.",
-      "tr": "Tuz odası, tuz peelingi, medikal masaj ve premium yüz maskesi seçeneğiyle 2,5 saatlik daha derin bakım programı.",
-      "ar": "برنامج عناية أعمق لمدة ساعتين ونصف مع غرفة الملح وتقشير الملح والتدليك الطبي وخيار قناع وجه فاخر.",
-      "de": "Ein intensiveres 2,5-stündiges Pflegeprogramm mit Salzraum, Salz-Peeling, medizinischer Massage und Premium-Gesichtsmaske.",
-      "pl": "Głębszy 2,5-godzinny program pielęgnacyjny z pokojem solnym, peelingiem solnym, masażem medycznym i maską premium do wyboru.",
-      "fr": "Un programme de soin plus profond de 2 h 30 avec salle de sel, gommage au sel, massage médical et masque visage premium au choix."
-    },
-    "steps": [
-      "saunaSteamroomSaltRoom",
-      "saltPeeling",
-      "foamMassage",
-      "medicalMassage60",
-      "faceMaskChocolateAlgae"
-    ],
-    "shortDescription": {
-      "en": "A deeper 2.5-hour care program with salt room, salt peeling, medical massage and a premium face mask option.",
-      "ru": "Более глубокая программа ухода на 2,5 часа: соляная комната, солевой пилинг, медицинский массаж и премиальная маска на выбор.",
-      "tr": "Tuz odası, tuz peelingi, medikal masaj ve premium yüz maskesi seçeneğiyle 2,5 saatlik daha derin bakım programı.",
-      "ar": "برنامج عناية أعمق لمدة ساعتين ونصف مع غرفة الملح وتقشير الملح والتدليك الطبي وخيار قناع وجه فاخر.",
-      "de": "Ein intensiveres 2,5-stündiges Pflegeprogramm mit Salzraum, Salz-Peeling, medizinischer Massage und Premium-Gesichtsmaske.",
-      "pl": "Głębszy 2,5-godzinny program pielęgnacyjny z pokojem solnym, peelingiem solnym, masażem medycznym i maską premium do wyboru.",
-      "fr": "Un programme de soin plus profond de 2 h 30 avec salle de sel, gommage au sel, massage médical et masque visage premium au choix."
-    },
-    "fullDescription": {
-      "en": "A deeper 2.5-hour care program with salt room, salt peeling, medical massage and a premium face mask option.",
-      "ru": "Более глубокая программа ухода на 2,5 часа: соляная комната, солевой пилинг, медицинский массаж и премиальная маска на выбор.",
-      "tr": "Tuz odası, tuz peelingi, medikal masaj ve premium yüz maskesi seçeneğiyle 2,5 saatlik daha derin bakım programı.",
-      "ar": "برنامج عناية أعمق لمدة ساعتين ونصف مع غرفة الملح وتقشير الملح والتدليك الطبي وخيار قناع وجه فاخر.",
-      "de": "Ein intensiveres 2,5-stündiges Pflegeprogramm mit Salzraum, Salz-Peeling, medizinischer Massage und Premium-Gesichtsmaske.",
-      "pl": "Głębszy 2,5-godzinny program pielęgnacyjny z pokojem solnym, peelingiem solnym, masażem medycznym i maską premium do wyboru.",
-      "fr": "Un programme de soin plus profond de 2 h 30 avec salle de sel, gommage au sel, massage médical et masque visage premium au choix."
-    }
-  },
-  {
-    "id": "package-4-vip-experience",
-    "image": "/gallery/package-vip-experience.webp",
-    "duration": "3 hour",
-    "title": {
-      "en": "Package 4 — VIP Experience",
-      "ru": "Пакет 4 — VIP Experience",
-      "tr": "Paket 4 — VIP Deneyim",
-      "ar": "الباقة 4 — تجربة VIP",
-      "de": "Paket 4 — VIP Experience",
-      "pl": "Pakiet 4 — VIP Experience",
-      "fr": "Forfait 4 — Expérience VIP"
-    },
-    "description": {
-      "en": "The most complete 3-hour spa experience: hammam, double peeling, foam massage, 90-minute mix massage, body wrap and premium face mask.",
-      "ru": "Самая полная 3-часовая спа-программа: хаммам, двойной пилинг, пенный массаж, 90-минутный микс-массаж, обёртывание и премиальная маска.",
-      "tr": "En kapsamlı 3 saatlik spa deneyimi: hamam, çift peeling, köpük masajı, 90 dakikalık mix masaj, vücut sargısı ve premium yüz maskesi.",
-      "ar": "أكمل تجربة سبا لمدة 3 ساعات: حمام، تقشير مزدوج، تدليك بالرغوة، تدليك مختلط 90 دقيقة، لف للجسم وقناع وجه فاخر.",
-      "de": "Das umfassendste 3-stündige Spa-Erlebnis: Hammam, doppeltes Peeling, Schaummassage, 90-minütige Mix-Massage, Körperpackung und Premium-Maske.",
-      "pl": "Najpełniejsze 3-godzinne doświadczenie spa: hammam, podwójny peeling, masaż pianą, 90-minutowy masaż mieszany, okład na ciało i maska premium.",
-      "fr": "L’expérience spa la plus complète de 3 heures : hammam, double gommage, massage à la mousse, massage mixte de 90 minutes, enveloppement et masque premium."
-    },
-    "steps": [
-      "saunaSteamroomSaltRoom",
-      "saltCoffeePeeling",
-      "foamMassage",
-      "mixMassage90",
-      "algaeOrChocolateWrap",
-      "faceMaskChocolateAlgae"
-    ],
-    "shortDescription": {
-      "en": "The most complete 3-hour spa experience: hammam, double peeling, foam massage, 90-minute mix massage, body wrap and premium face mask.",
-      "ru": "Самая полная 3-часовая спа-программа: хаммам, двойной пилинг, пенный массаж, 90-минутный микс-массаж, обёртывание и премиальная маска.",
-      "tr": "En kapsamlı 3 saatlik spa deneyimi: hamam, çift peeling, köpük masajı, 90 dakikalık mix masaj, vücut sargısı ve premium yüz maskesi.",
-      "ar": "أكمل تجربة سبا لمدة 3 ساعات: حمام، تقشير مزدوج، تدليك بالرغوة، تدليك مختلط 90 دقيقة، لف للجسم وقناع وجه فاخر.",
-      "de": "Das umfassendste 3-stündige Spa-Erlebnis: Hammam, doppeltes Peeling, Schaummassage, 90-minütige Mix-Massage, Körperpackung und Premium-Maske.",
-      "pl": "Najpełniejsze 3-godzinne doświadczenie spa: hammam, podwójny peeling, masaż pianą, 90-minutowy masaż mieszany, okład na ciało i maska premium.",
-      "fr": "L’expérience spa la plus complète de 3 heures : hammam, double gommage, massage à la mousse, massage mixte de 90 minutes, enveloppement et masque premium."
-    },
-    "fullDescription": {
-      "en": "The most complete 3-hour spa experience: hammam, double peeling, foam massage, 90-minute mix massage, body wrap and premium face mask.",
-      "ru": "Самая полная 3-часовая спа-программа: хаммам, двойной пилинг, пенный массаж, 90-минутный микс-массаж, обёртывание и премиальная маска.",
-      "tr": "En kapsamlı 3 saatlik spa deneyimi: hamam, çift peeling, köpük masajı, 90 dakikalık mix masaj, vücut sargısı ve premium yüz maskesi.",
-      "ar": "أكمل تجربة سبا لمدة 3 ساعات: حمام، تقشير مزدوج، تدليك بالرغوة، تدليك مختلط 90 دقيقة، لف للجسم وقناع وجه فاخر.",
-      "de": "Das umfassendste 3-stündige Spa-Erlebnis: Hammam, doppeltes Peeling, Schaummassage, 90-minütige Mix-Massage, Körperpackung und Premium-Maske.",
-      "pl": "Najpełniejsze 3-godzinne doświadczenie spa: hammam, podwójny peeling, masaż pianą, 90-minutowy masaż mieszany, okład na ciało i maska premium.",
-      "fr": "L’expérience spa la plus complète de 3 heures : hammam, double gommage, massage à la mousse, massage mixte de 90 minutes, enveloppement et masque premium."
-    }
+    "id": "program-3",
+    "duration": "90 min",
+    "image": "./gallery/package-premium-care.webp",
+    "title": {"en":"Program 3 — 90 min","ru":"Программа 3 — 90 мин","tr":"Program 3 — 90 dk"},
+    "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
+    "fullDescription": {"en":"Program 3 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Программа 3 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Program 3 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
+    "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage45", "algenMask", "tea"]
   }
 ];
 
@@ -1821,7 +1633,7 @@ const translations = {
       "lead": "More than 25 years in spa services.",
       "text": "Comfort, privacy and quality relaxation for every guest.",
       "noteTitle": "Daily 08:00–20:30",
-      "noteText": "Choose your hotel and reserve in one message."
+      "noteText": "Located inside Saint Star Kemer Hotel."
     },
     "stats": {
       "years": "years of experience",
@@ -1831,7 +1643,7 @@ const translations = {
     "about": {
       "eyebrow": "About us",
       "title": "A calm spa space inside selected resort hotels.",
-      "p1": "ZEN SPA CENTER is a premium spa network inside selected resort hotels in Kemer and Beldibi.",
+      "p1": "SPA CENTER KEMER is a premium spa network inside selected resort hotels in Kemer and Beldibi.",
       "p2": "We offer private hammam rituals, expert massage and relaxing body care in a calm, comfortable and confidential atmosphere."
     },
     "why": {
@@ -1848,8 +1660,8 @@ const translations = {
     },
     "hotels": {
       "eyebrow": "Our locations",
-      "title": "We work in selected hotels.",
-      "subtitle": "Zen Spa Center operates in hotels across Kemer and Beldibi:"
+      "title": "Saint Star Kemer Hotel",
+      "subtitle": "Located inside Saint Star Kemer Hotel."
     },
     "gallery": {
       "eyebrow": "Gallery",
@@ -1858,18 +1670,18 @@ const translations = {
     },
     "cta": {
       "title": "Ready to relax today?",
-      "subtitle": "Choose your hotel, send one message and we will help you select the right treatment and time."
+      "subtitle": "Located inside Saint Star Kemer Hotel."
     },
     "footer": {
-      "text": "Premium spa network in Kemer and Beldibi hotels.",
+      "text": "Located inside Saint Star Kemer Hotel.",
       "credit": "Website made by Dmitry Bondarev"
     },
     "bar": {
       "title": "Ready to relax?",
-      "subtitle": "Choose your hotel and book via WhatsApp."
+      "subtitle": "Located inside Saint Star Kemer Hotel."
     },
     "hotelModal": {
-      "title": "Choose your hotel",
+      "title": "Contact via WhatsApp",
       "subtitle": "After selecting a hotel, WhatsApp will open with a ready message."
     },
     "servicesPage": {
@@ -1892,7 +1704,7 @@ const translations = {
       "asianMassage": "Asian Massage"
     },
     "wa": {
-      "general": "Hello! I would like to book a spa service at Zen Spa Center.",
+      "general": "Hello! I would like to book a spa service at Spa Center Kemer.",
       "service": "Service",
       "hotel": "Hotel"
     }
@@ -1929,7 +1741,7 @@ const translations = {
     "about": {
       "eyebrow": "О нас",
       "title": "Спокойное spa-пространство внутри выбранных курортных отелей.",
-      "p1": "Zen Spa Center — сеть spa-центров в Kemer и Beldibi, созданная вокруг релакса, приватности и внимательного сервиса.",
+      "p1": "Spa Center Kemer — сеть spa-центров в Kemer и Beldibi, созданная вокруг релакса, приватности и внимательного сервиса.",
       "p2": "Наши процедуры объединяют турецкий хамам, профессиональные массажные техники и современный уход за телом в чистой, спокойной атмосфере."
     },
     "why": {
@@ -1947,7 +1759,7 @@ const translations = {
     "hotels": {
       "eyebrow": "Наши локации",
       "title": "Мы работаем в выбранных отелях.",
-      "subtitle": "Zen Spa Center работает в отелях региона Kemer и Beldibi:"
+      "subtitle": "Спа-центр находится в отеле Saint Star Kemer."
     },
     "gallery": {
       "eyebrow": "Галерея",
@@ -1990,7 +1802,7 @@ const translations = {
       "asianMassage": "Азиатский массаж"
     },
     "wa": {
-      "general": "Здравствуйте! Я хочу забронировать spa-услугу в Zen Spa Center.",
+      "general": "Здравствуйте! Я хочу забронировать spa-услугу в Spa Center Kemer.",
       "service": "Услуга",
       "hotel": "Отель"
     }
@@ -2027,7 +1839,7 @@ const translations = {
     "about": {
       "eyebrow": "Hakkımızda",
       "title": "Seçili resort oteller içinde huzurlu spa alanı.",
-      "p1": "Zen Spa Center, Kemer ve Beldibi’nde rahatlama, mahremiyet ve özenli hizmet anlayışıyla çalışan bir otel spa ağıdır.",
+      "p1": "Spa Center Kemer, Kemer ve Beldibi’nde rahatlama, mahremiyet ve özenli hizmet anlayışıyla çalışan bir otel spa ağıdır.",
       "p2": "Uygulamalarımız Türk hamamı ritüellerini, profesyonel masaj tekniklerini ve modern vücut bakımını temiz ve sakin bir atmosferde birleştirir."
     },
     "why": {
@@ -2044,8 +1856,8 @@ const translations = {
     },
     "hotels": {
       "eyebrow": "Lokasyonlarımız",
-      "title": "Seçili otellerde hizmet veriyoruz.",
-      "subtitle": "Zen Spa Center, Kemer ve Beldibi bölgesindeki otellerde hizmet vermektedir:"
+      "title": "Saint Star Kemer Hotel",
+      "subtitle": "Spa merkezi Saint Star Kemer Hotel içinde yer almaktadır."
     },
     "gallery": {
       "eyebrow": "Galeri",
@@ -2088,7 +1900,7 @@ const translations = {
       "asianMassage": "Asya Masajı"
     },
     "wa": {
-      "general": "Merhaba! Zen Spa Center’da spa hizmeti için rezervasyon yapmak istiyorum.",
+      "general": "Merhaba! Spa Center Kemer’da spa hizmeti için rezervasyon yapmak istiyorum.",
       "service": "Hizmet",
       "hotel": "Otel"
     }
@@ -2125,7 +1937,7 @@ const translations = {
     "about": {
       "eyebrow": "Über uns",
       "title": "Ein ruhiger Spa-Bereich in ausgewählten Resort-Hotels.",
-      "p1": "Zen Spa Center ist ein Hotel-Spa-Netzwerk in Kemer und Beldibi, ausgerichtet auf Entspannung, Privatsphäre und aufmerksamen Service.",
+      "p1": "Spa Center Kemer ist ein Hotel-Spa-Netzwerk in Kemer und Beldibi, ausgerichtet auf Entspannung, Privatsphäre und aufmerksamen Service.",
       "p2": "Unsere Anwendungen verbinden türkische Hamam-Rituale, professionelle Massagetechniken und moderne Körperpflege in ruhiger, sauberer Atmosphäre."
     },
     "why": {
@@ -2143,7 +1955,7 @@ const translations = {
     "hotels": {
       "eyebrow": "Unsere Standorte",
       "title": "Wir arbeiten in ausgewählten Hotels.",
-      "subtitle": "Zen Spa Center ist in Hotels in Kemer und Beldibi tätig:"
+      "subtitle": "Spa Center Kemer ist in Hotels in Kemer und Beldibi tätig:"
     },
     "gallery": {
       "eyebrow": "Galerie",
@@ -2186,7 +1998,7 @@ const translations = {
       "asianMassage": "Asiatische Massage"
     },
     "wa": {
-      "general": "Hallo! Ich möchte einen Spa-Service im Zen Spa Center buchen.",
+      "general": "Hallo! Ich möchte einen Spa-Service im Spa Center Kemer buchen.",
       "service": "Service",
       "hotel": "Hotel"
     }
@@ -2223,7 +2035,7 @@ const translations = {
     "about": {
       "eyebrow": "O nas",
       "title": "Spokojna przestrzeń spa w wybranych hotelach resortowych.",
-      "p1": "Zen Spa Center to sieć hotelowych spa w Kemer i Beldibi, stworzona wokół relaksu, prywatności i uważnej obsługi.",
+      "p1": "Spa Center Kemer to sieć hotelowych spa w Kemer i Beldibi, stworzona wokół relaksu, prywatności i uważnej obsługi.",
       "p2": "Nasze zabiegi łączą tureckie rytuały hammam, profesjonalne techniki masażu i nowoczesną pielęgnację ciała w czystej, spokojnej atmosferze."
     },
     "why": {
@@ -2241,7 +2053,7 @@ const translations = {
     "hotels": {
       "eyebrow": "Nasze lokalizacje",
       "title": "Działamy w wybranych hotelach.",
-      "subtitle": "Zen Spa Center działa w hotelach w Kemer i Beldibi:"
+      "subtitle": "Spa Center Kemer działa w hotelach w Kemer i Beldibi:"
     },
     "gallery": {
       "eyebrow": "Galeria",
@@ -2284,7 +2096,7 @@ const translations = {
       "asianMassage": "Masaż azjatycki"
     },
     "wa": {
-      "general": "Dzień dobry! Chcę zarezerwować usługę spa w Zen Spa Center.",
+      "general": "Dzień dobry! Chcę zarezerwować usługę spa w Spa Center Kemer.",
       "service": "Usługa",
       "hotel": "Hotel"
     }
@@ -2320,8 +2132,8 @@ const translations = {
     },
     "about": {
       "eyebrow": "من نحن",
-      "title": "ZEN SPA CENTER داخل فنادق منتقاة.",
-      "p1": "ZEN SPA CENTER شبكة سبا فاخرة داخل فنادق منتقاة في كيمير وبلديبي.",
+      "title": "SPA CENTER KEMER داخل فنادق منتقاة.",
+      "p1": "SPA CENTER KEMER شبكة سبا فاخرة داخل فنادق منتقاة في كيمير وبلديبي.",
       "p2": "نقدم حماماً خاصاً، وتدليكاً احترافياً، وعناية مريحة بالجسم في أجواء هادئة ومريحة وسرية."
     },
     "why": {
@@ -2339,7 +2151,7 @@ const translations = {
     "hotels": {
       "eyebrow": "مواقعنا",
       "title": "نعمل داخل فنادق منتقاة.",
-      "subtitle": "يعمل Zen Spa Center في فنادق كيمير وبلديبي:"
+      "subtitle": "يعمل Spa Center Kemer في فنادق كيمير وبلديبي:"
     },
     "gallery": {
       "eyebrow": "المعرض",
@@ -2382,7 +2194,7 @@ const translations = {
       "asianMassage": "التدليك الآسيوي"
     },
     "wa": {
-      "general": "مرحباً! أود حجز خدمة سبا في Zen Spa Center.",
+      "general": "مرحباً! أود حجز خدمة سبا في Spa Center Kemer.",
       "service": "الخدمة",
       "hotel": "الفندق"
     }
@@ -2419,7 +2231,7 @@ const translations = {
     "about": {
       "eyebrow": "À propos",
       "title": "Un espace spa paisible dans des hôtels resort sélectionnés.",
-      "p1": "Zen Spa Center est un réseau de spas hôteliers à Kemer et Beldibi, pensé pour la détente, la confidentialité et un service attentif.",
+      "p1": "Spa Center Kemer est un réseau de spas hôteliers à Kemer et Beldibi, pensé pour la détente, la confidentialité et un service attentif.",
       "p2": "Nos soins associent rituels du hammam turc, techniques de massage professionnelles et soins corporels modernes dans une atmosphère propre et calme."
     },
     "why": {
@@ -2437,7 +2249,7 @@ const translations = {
     "hotels": {
       "eyebrow": "Nos emplacements",
       "title": "Nous travaillons dans des hôtels sélectionnés.",
-      "subtitle": "Zen Spa Center opère dans des hôtels à Kemer et Beldibi :"
+      "subtitle": "Spa Center Kemer opère dans des hôtels à Kemer et Beldibi :"
     },
     "gallery": {
       "eyebrow": "Galerie",
@@ -2480,7 +2292,7 @@ const translations = {
       "asianMassage": "Massage asiatique"
     },
     "wa": {
-      "general": "Bonjour ! Je souhaite réserver un service spa au Zen Spa Center.",
+      "general": "Bonjour ! Je souhaite réserver un service spa au Spa Center Kemer.",
       "service": "Service",
       "hotel": "Hôtel"
     }

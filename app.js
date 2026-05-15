@@ -1,7 +1,7 @@
 const SPA_LANGS = ['ru', 'ar', 'tr', 'en', 'de', 'pl', 'fr'];
 const LANG_LABELS = { ru: 'RU', ar: 'AR', tr: 'TR', en: 'EN', de: 'DE', pl: 'PL', fr: 'FR' };
 
-let currentLang = localStorage.getItem('zenSpaLang') || 'en';
+let currentLang = localStorage.getItem('spaCenterLang') || 'en';
 let selectedService = null;
 let currentGalleryIndex = 0;
 let currentModalImageClickHandler = null;
@@ -87,7 +87,6 @@ function renderDynamic() {
     renderFilters();
     renderServices();
   }
-  renderHotelOptions();
 }
 
 function renderFeatures() {
@@ -229,7 +228,7 @@ function renderServices() {
     const service = getAllServices().find((item) => item.id === btn.dataset.serviceBook);
     if (!service) return;
     selectedService = service;
-    openModal('#hotelModal');
+    window.open(buildWhatsAppUrl(service), '_blank', 'noopener,noreferrer');
   }));
 
   $$('[data-program-book]').forEach((btn) => btn.addEventListener('click', (event) => {
@@ -237,7 +236,7 @@ function renderServices() {
     const program = getAllPrograms().find((item) => item.id === btn.dataset.programBook);
     if (!program) return;
     selectedService = program;
-    openModal('#hotelModal');
+    window.open(buildWhatsAppUrl(program), '_blank', 'noopener,noreferrer');
   }));
 }
 
@@ -337,29 +336,14 @@ function shiftGallery(step) {
   openGallery(currentGalleryIndex);
 }
 
-function renderHotelOptions() {
-  const root = $('#hotelOptions');
-  if (!root) return;
-  root.innerHTML = hotelItems.map((hotel) => `
-    <button type="button" data-hotel-id="${escapeHtml(hotel.id)}">
-      <strong>${escapeHtml(hotel.name)}</strong>
-      <small>${escapeHtml(hotel.location)}</small>
-    </button>
-  `).join('');
-  $$('[data-hotel-id]').forEach((btn) => btn.addEventListener('click', () => {
-    const hotel = hotelItems.find((item) => item.id === btn.dataset.hotelId);
-    if (hotel) window.open(buildWhatsAppUrl(hotel, selectedService), '_blank', 'noopener,noreferrer');
-    closeModals();
-  }));
-}
-
-function buildWhatsAppUrl(hotel, service) {
+function buildWhatsAppUrl(service) {
   const wa = t('wa');
   const lines = [wa.general];
   if (service) lines.push(`${wa.service}: ${getLocalized(service.title)}`);
-  lines.push(`${wa.hotel}: ${hotel.name}`);
-  return `https://wa.me/${hotel.phone || siteConfig.whatsappFallback}?text=${encodeURIComponent(lines.join('\n'))}`;
+  lines.push(`${wa.hotel}: Saint Star Kemer Hotel`);
+  return `https://wa.me/905010399572?text=${encodeURIComponent(lines.join("\n"))}`;
 }
+
 
 function openModal(selector) {
   const modal = $(selector);
@@ -403,7 +387,7 @@ function init() {
   $$('[data-lang-switch]').forEach((btn) => btn.addEventListener('click', () => setLanguage(btn.dataset.langSwitch)));
   $$('.wa-trigger').forEach((btn) => btn.addEventListener('click', () => {
     selectedService = null;
-    openModal('#hotelModal');
+    window.open('https://wa.me/905010399572', '_blank', 'noopener,noreferrer');
   }));
   $$('[data-close-modal]').forEach((btn) => btn.addEventListener('click', closeModals));
   $$('.modal-overlay').forEach((overlay) => overlay.addEventListener('click', (event) => {
@@ -413,7 +397,7 @@ function init() {
   $('#galleryNext')?.addEventListener('click', () => shiftGallery(1));
   $('#serviceModalBook')?.addEventListener('click', () => {
     closeModals();
-    openModal('#hotelModal');
+    window.open(buildWhatsAppUrl(selectedService), '_blank', 'noopener,noreferrer');
   });
   $('#imageLightbox')?.addEventListener('click', (event) => {
     if (event.target.id === 'imageLightbox') closeImageLightbox();

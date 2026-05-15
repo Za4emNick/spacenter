@@ -1043,7 +1043,7 @@ html[dir="rtl"] .service-card-top{direction:rtl}
 .program-card-image.is-missing::after,
 .service-media.is-missing::after,
 .image-shell.is-missing::after {
-  content: "Zen Spa Center";
+  content: "Spa Center Kemer";
   position: absolute;
   inset: 0;
   display: grid;
@@ -1309,4 +1309,40 @@ html[dir="rtl"] .service-modal-grid { direction: rtl; }
     aspect-ratio: 4 / 3;
     height: auto;
   }
+}
+
+/* 2026-05 visual update: neutral dark services */
+body[data-page="services"] {
+  background: #050505;
+}
+body[data-page="services"] .services-hero,
+body[data-page="services"] .services-only,
+body[data-page="services"] .service-category,
+body[data-page="services"] .modal-card {
+  background: #0a0a0a;
+}
+body[data-page="services"] .service-category,
+body[data-page="services"] .service-card,
+body[data-page="services"] .service-media,
+body[data-page="services"] .service-programs-section {
+  border-color: rgba(255,255,255,.14);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+}
+body[data-page="services"] .service-category h2,
+body[data-page="services"] .modal-meta,
+body[data-page="services"] .eyebrow {
+  color: #f1f1f1;
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.2);
+}
+body[data-page="services"] .btn-primary,
+body[data-page="services"] .mini-book-btn,
+body[data-page="services"] .services-sticky-book {
+  color: #fff;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: none;
+}
+body[data-page="services"] .btn-secondary {
+  border-color: rgba(255,255,255,.28);
 }
