@@ -106,48 +106,6 @@ const serviceItems = [
     }
   },
   {
-    "id": "salt-room",
-    "category": "hamam",
-    "duration": "20 min",
-    "image": "/gallery/saltroom.webp",
-    "title": {
-      "en": "Salt Room",
-      "ru": "Соляная комната",
-      "tr": "Tuz Odası",
-      "ar": "غرفة الملح",
-      "de": "Salzraum",
-      "pl": "Pokój solny",
-      "fr": "Salle de sel"
-    },
-    "description": {
-      "en": "A calm relaxation room with a mineral atmosphere. It completes the spa ritual with a peaceful pause before body care and massage.",
-      "ru": "Спокойная зона отдыха с минеральной атмосферой. Она дополняет спа-ритуал и помогает мягко расслабиться перед уходом за телом и массажем.",
-      "tr": "Mineral atmosferli sakin bir dinlenme alanı. Vücut bakımı ve masaj öncesinde spa ritüelini huzurlu bir mola ile tamamlar.",
-      "ar": "غرفة هادئة بأجواء معدنية تساعد على الاسترخاء وتمنح الضيف استراحة لطيفة قبل العناية بالجسم والتدليك.",
-      "de": "Ein ruhiger Entspannungsraum mit mineralischer Atmosphäre. Er ergänzt das Spa-Ritual mit einer angenehmen Pause vor Körperpflege und Massage.",
-      "pl": "Spokojna strefa relaksu o mineralnej atmosferze. Uzupełnia rytuał spa i pozwala odpocząć przed pielęgnacją ciała oraz masażem.",
-      "fr": "Un espace calme à l’atmosphère minérale. Il complète le rituel spa par une pause relaxante avant les soins du corps et le massage."
-    },
-    "shortDescription": {
-      "en": "A calm relaxation room with a mineral atmosphere. It completes the spa ritual with a peaceful pause before body care and massage.",
-      "ru": "Спокойная зона отдыха с минеральной атмосферой. Она дополняет спа-ритуал и помогает мягко расслабиться перед уходом за телом и массажем.",
-      "tr": "Mineral atmosferli sakin bir dinlenme alanı. Vücut bakımı ve masaj öncesinde spa ritüelini huzurlu bir mola ile tamamlar.",
-      "ar": "غرفة هادئة بأجواء معدنية تساعد على الاسترخاء وتمنح الضيف استراحة لطيفة قبل العناية بالجسم والتدليك.",
-      "de": "Ein ruhiger Entspannungsraum mit mineralischer Atmosphäre. Er ergänzt das Spa-Ritual mit einer angenehmen Pause vor Körperpflege und Massage.",
-      "pl": "Spokojna strefa relaksu o mineralnej atmosferze. Uzupełnia rytuał spa i pozwala odpocząć przed pielęgnacją ciała oraz masażem.",
-      "fr": "Un espace calme à l’atmosphère minérale. Il complète le rituel spa par une pause relaxante avant les soins du corps et le massage."
-    },
-    "fullDescription": {
-      "en": "A calm relaxation room with a mineral atmosphere. It completes the spa ritual with a peaceful pause before body care and massage.",
-      "ru": "Спокойная зона отдыха с минеральной атмосферой. Она дополняет спа-ритуал и помогает мягко расслабиться перед уходом за телом и массажем.",
-      "tr": "Mineral atmosferli sakin bir dinlenme alanı. Vücut bakımı ve masaj öncesinde spa ritüelini huzurlu bir mola ile tamamlar.",
-      "ar": "غرفة هادئة بأجواء معدنية تساعد على الاسترخاء وتمنح الضيف استراحة لطيفة قبل العناية بالجسم والتدليك.",
-      "de": "Ein ruhiger Entspannungsraum mit mineralischer Atmosphäre. Er ergänzt das Spa-Ritual mit einer angenehmen Pause vor Körperpflege und Massage.",
-      "pl": "Spokojna strefa relaksu o mineralnej atmosferze. Uzupełnia rytuał spa i pozwala odpocząć przed pielęgnacją ciała oraz masażem.",
-      "fr": "Un espace calme à l’atmosphère minérale. Il complète le rituel spa par une pause relaxante avant les soins du corps et le massage."
-    }
-  },
-  {
     "id": "peeling",
     "category": "hamam",
     "duration": "20 min",
