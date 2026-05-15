@@ -1346,3 +1346,19 @@ body[data-page="services"] .services-sticky-book {
 body[data-page="services"] .btn-secondary {
   border-color: rgba(255,255,255,.28);
 }
+
+
+/* Final services dark premium cleanup */
+.services-hero,.services-only{background:#050505;color:#f2f2f2;}
+.service-category{background:#121212;border:1px solid #2c2c2c;}
+.service-category h2,.service-category-head h2{color:#fff;font-family:"Manrope",sans-serif;font-size:clamp(24px,2.8vw,32px);}
+.service-category-head .eyebrow{color:#a8a8a8;letter-spacing:.08em;text-transform:uppercase;}
+.service-category-head{border-left:2px solid #3a3a3a;padding-left:12px;}
+.service-card.compact{background:#1a1a1a;border:1px solid #333;}
+.service-card.compact:hover{border-color:#4a4a4a;background:#202020;}
+.service-arrow,.service-meta-line{color:#bfbfbf;}
+.service-desc{color:#a9a9a9;}
+.program-steps-preview{background:#151515;border-color:#333;}
+.program-steps-preview strong{color:#d5d5d5;}
+@media (max-width:900px){.service-card-grid{grid-template-columns:1fr;}.programs-grid{grid-template-columns:1fr;}}
+@media (min-width:901px){.service-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}

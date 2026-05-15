@@ -133,7 +133,6 @@ function buildServiceCard(service) {
 
   return `
     <article class="service-card compact" role="button" tabindex="0" data-service-details="${escapeHtml(service.id)}">
-      <div class="service-card-image">${imageTag(service.image, title)}</div>
       <div class="compact-body">
         <div class="service-card-top">
           <h3>${escapeHtml(title)}</h3>
@@ -250,21 +249,6 @@ function fillServiceModal(item, categoryText, isProgram = false) {
   $('#serviceModalDuration').textContent = duration;
   $('#serviceModalText').textContent = getFullDescription(item);
 
-  const imageWrap = $('#serviceModalImageWrap');
-  if (imageWrap) {
-    imageWrap.classList.remove('is-missing');
-    imageWrap.innerHTML = imageTag(item.image, title, 'service-modal-img');
-    const modalImage = imageWrap.querySelector('img');
-    if (modalImage) {
-      modalImage.style.cursor = 'zoom-in';
-      if (currentModalImageClickHandler) {
-        modalImage.removeEventListener('click', currentModalImageClickHandler);
-      }
-      currentModalImageClickHandler = () => openImageLightbox(modalImage.currentSrc || modalImage.src, modalImage.alt || title);
-      modalImage.addEventListener('click', currentModalImageClickHandler);
-    }
-  }
-
   const stepsWrap = $('#serviceModalSteps');
   if (stepsWrap) {
     if (isProgram && Array.isArray(item.steps) && item.steps.length) {
@@ -340,7 +324,6 @@ function buildWhatsAppUrl(service) {
   const wa = t('wa');
   const lines = [wa.general];
   if (service) lines.push(`${wa.service}: ${getLocalized(service.title)}`);
-  lines.push(`${wa.hotel}: Saint Star Kemer Hotel`);
   return `https://wa.me/905010399572?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 

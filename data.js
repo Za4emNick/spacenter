@@ -1585,7 +1585,7 @@ const spaPrograms = [
     "id": "program-1",
     "duration": "75 min",
     "image": "./gallery/package-traditional-hammam.webp",
-    "title": {"en":"Program 1 — 75 min","ru":"Программа 1 — 75 мин","tr":"Program 1 — 75 dk"},
+    "title": {"en":"Program 1","ru":"Программа 1","tr":"Program 1"},
     "shortDescription": {"en":"Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
     "fullDescription": {"en":"Program 1 includes: Sauna, Peeling, Foam Massage, Classic Massage — 30 min, Algen Mask, Tea.","ru":"Программа 1 включает: Сауна, Пилинг, Мыльный массаж, Классический массаж — 30 мин, Маска Algen, Чай.","tr":"Program 1 içeriği: Sauna, Peeling, Köpük Masajı, Klasik Masaj — 30 dk, Algen Maske, Çay."},
     "steps": ["sauna", "peeling", "foamMassage", "classicMassage30", "algenMask", "tea"]
@@ -1594,7 +1594,7 @@ const spaPrograms = [
     "id": "program-2",
     "duration": "90 min",
     "image": "./gallery/package-aroma-care.webp",
-    "title": {"en":"Program 2 — 90 min","ru":"Программа 2 — 90 мин","tr":"Program 2 — 90 dk"},
+    "title": {"en":"Program 2","ru":"Программа 2","tr":"Program 2"},
     "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
     "fullDescription": {"en":"Program 2 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 30 min, Algen Mask, Tea.","ru":"Программа 2 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 30 мин, Маска Algen, Чай.","tr":"Program 2 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 30 dk, Algen Maske, Çay."},
     "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage30", "algenMask", "tea"]
@@ -1603,7 +1603,7 @@ const spaPrograms = [
     "id": "program-3",
     "duration": "90 min",
     "image": "./gallery/package-premium-care.webp",
-    "title": {"en":"Program 3 — 90 min","ru":"Программа 3 — 90 мин","tr":"Program 3 — 90 dk"},
+    "title": {"en":"Program 3","ru":"Программа 3","tr":"Program 3"},
     "shortDescription": {"en":"Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
     "fullDescription": {"en":"Program 3 includes: Sauna, Salt Peeling, Foam Massage, Medical Massage — 45 min, Algen Mask, Tea.","ru":"Программа 3 включает: Сауна, Солевой пилинг, Мыльный массаж, Медицинский массаж — 45 мин, Маска Algen, Чай.","tr":"Program 3 içeriği: Sauna, Tuz Peeling, Köpük Masajı, Medikal Masaj — 45 dk, Algen Maske, Çay."},
     "steps": ["sauna", "saltPeeling", "foamMassage", "medicalMassage45", "algenMask", "tea"]
@@ -1628,7 +1628,7 @@ const translations = {
       "bookService": "Book this service"
     },
     "hero": {
-      "eyebrow": "Hotel spa network in Kemer & Beldibi",
+      "eyebrow": "",
       "title": "Premium Spa",
       "lead": "More than 25 years in spa services.",
       "text": "Comfort, privacy and quality relaxation for every guest.",
@@ -1642,8 +1642,8 @@ const translations = {
     },
     "about": {
       "eyebrow": "About us",
-      "title": "A calm spa space inside selected resort hotels.",
-      "p1": "SPA CENTER KEMER is a premium spa network inside selected resort hotels in Kemer and Beldibi.",
+      "title": "A calm spa space inside Saint Star Kemer Hotel.",
+      "p1": "Spa Center Kemer is located inside Saint Star Kemer Hotel, offering relaxing hammam rituals, professional massages and body care treatments in a clean and peaceful atmosphere.",
       "p2": "We offer private hammam rituals, expert massage and relaxing body care in a calm, comfortable and confidential atmosphere."
     },
     "why": {
@@ -1682,17 +1682,17 @@ const translations = {
     },
     "hotelModal": {
       "title": "Contact via WhatsApp",
-      "subtitle": "After selecting a hotel, WhatsApp will open with a ready message."
+      "subtitle": "WhatsApp opens with a ready booking message."
     },
     "servicesPage": {
       "eyebrow": "Treatment menu",
       "title": "Spa services",
-      "subtitle": "A clean treatment menu: choose a service, open details and book after selecting your hotel."
+      "subtitle": "Choose a treatment, open the details and book directly via WhatsApp."
     },
     "services": {
       "all": "All",
       "duration": "Duration",
-      "detailsText": "This treatment is prepared for deep relaxation, recovery and comfort. For exact details and available time, choose your hotel and contact us on WhatsApp.",
+      "detailsText": "This treatment is prepared for deep relaxation, recovery and comfort. For exact details and available time, contact us on WhatsApp.",
       "includes": "Includes",
       "choose": "Choose this ritual"
     },
@@ -1704,7 +1704,7 @@ const translations = {
       "asianMassage": "Asian Massage"
     },
     "wa": {
-      "general": "Hello! I would like to book a spa service at Spa Center Kemer.",
+      "general": "Hello, I would like to book a spa treatment at Saint Star Kemer Hotel.",
       "service": "Service",
       "hotel": "Hotel"
     }
@@ -1726,7 +1726,7 @@ const translations = {
       "bookService": "Забронировать услугу"
     },
     "hero": {
-      "eyebrow": "Сеть spa-центров в Kemer и Beldibi",
+      "eyebrow": "",
       "title": "Премиальные Спа",
       "lead": "Более 25 лет на рынке spa-услуг. Комфорт, конфиденциальность и качественный отдых для каждого гостя.",
       "text": "Приватный хамам, профессиональный массаж и уход за телом для гостей курортных отелей на побережье Средиземного моря.",
@@ -1740,8 +1740,8 @@ const translations = {
     },
     "about": {
       "eyebrow": "О нас",
-      "title": "Спокойное spa-пространство внутри выбранных курортных отелей.",
-      "p1": "Spa Center Kemer — сеть spa-центров в Kemer и Beldibi, созданная вокруг релакса, приватности и внимательного сервиса.",
+      "title": "Спокойное спа-пространство внутри отеля Saint Star Kemer.",
+      "p1": "Spa Center Kemer находится в отеле Saint Star Kemer и предлагает хамам-ритуалы, профессиональные массажи и уходовые процедуры в чистой и спокойной атмосфере.",
       "p2": "Наши процедуры объединяют турецкий хамам, профессиональные массажные техники и современный уход за телом в чистой, спокойной атмосфере."
     },
     "why": {
@@ -1779,18 +1779,18 @@ const translations = {
       "subtitle": "Выберите отель и забронируйте через WhatsApp."
     },
     "hotelModal": {
-      "title": "Выберите ваш отель",
+      "title": "Связаться через WhatsApp",
       "subtitle": "После выбора отеля откроется WhatsApp с готовым сообщением."
     },
     "servicesPage": {
       "eyebrow": "Меню процедур",
       "title": "SPA-услуги",
-      "subtitle": "Чистое меню процедур: выберите услугу, откройте детали и забронируйте после выбора отеля."
+      "subtitle": "Выберите процедуру, откройте подробности и запишитесь напрямую через WhatsApp."
     },
     "services": {
       "all": "Все",
       "duration": "Длительность",
-      "detailsText": "Эта процедура создана для глубокого расслабления, восстановления и комфорта. Для точных деталей и свободного времени выберите отель и свяжитесь с нами в WhatsApp.",
+      "detailsText": "Эта процедура создана для глубокого расслабления, восстановления и комфорта. Для точных деталей и свободного времени свяжитесь с нами в WhatsApp.",
       "includes": "Включает",
       "choose": "Выбрать ритуал"
     },
@@ -1802,7 +1802,7 @@ const translations = {
       "asianMassage": "Азиатский массаж"
     },
     "wa": {
-      "general": "Здравствуйте! Я хочу забронировать spa-услугу в Spa Center Kemer.",
+      "general": "Здравствуйте, я хочу записаться на спа-процедуру в Saint Star Kemer Hotel.",
       "service": "Услуга",
       "hotel": "Отель"
     }
@@ -1824,12 +1824,12 @@ const translations = {
       "bookService": "Bu hizmeti rezerve et"
     },
     "hero": {
-      "eyebrow": "Kemer ve Beldibi otellerinde spa ağı",
+      "eyebrow": "",
       "title": "Premium Spa",
       "lead": "Spa hizmetlerinde 25 yılı aşkın deneyim. Her misafir için konfor, mahremiyet ve kaliteli dinlenme.",
       "text": "Akdeniz kıyısındaki seçili resort otel misafirleri için özel hamam, uzman masaj ve rahatlatıcı vücut bakımı.",
       "noteTitle": "Her gün 08:00–20:30",
-      "noteText": "Otelinizi seçin ve tek mesajla rezervasyon yapın."
+      "noteText": "Tek mesajla WhatsApp üzerinden rezervasyon yapın."
     },
     "stats": {
       "years": "yıllık deneyim",
@@ -1838,8 +1838,8 @@ const translations = {
     },
     "about": {
       "eyebrow": "Hakkımızda",
-      "title": "Seçili resort oteller içinde huzurlu spa alanı.",
-      "p1": "Spa Center Kemer, Kemer ve Beldibi’nde rahatlama, mahremiyet ve özenli hizmet anlayışıyla çalışan bir otel spa ağıdır.",
+      "title": "Saint Star Kemer Hotel içinde sakin bir spa alanı.",
+      "p1": "Spa Center Kemer, Saint Star Kemer Hotel içinde yer alır ve temiz, huzurlu bir atmosferde hamam ritüelleri, profesyonel masajlar ve bakım uygulamaları sunar.",
       "p2": "Uygulamalarımız Türk hamamı ritüellerini, profesyonel masaj tekniklerini ve modern vücut bakımını temiz ve sakin bir atmosferde birleştirir."
     },
     "why": {
@@ -1866,7 +1866,7 @@ const translations = {
     },
     "cta": {
       "title": "Bugün rahatlamaya hazır mısınız?",
-      "subtitle": "Otelinizi seçin, tek mesaj gönderin; size uygun uygulama ve saati birlikte belirleyelim."
+      "subtitle": "Tek mesaj gönderin; size uygun uygulama ve saati birlikte belirleyelim."
     },
     "footer": {
       "text": "Kemer ve Beldibi otellerinde premium spa ağı.",
@@ -1874,21 +1874,21 @@ const translations = {
     },
     "bar": {
       "title": "Rahatlamaya hazır mısınız?",
-      "subtitle": "Otelinizi seçin ve WhatsApp üzerinden rezervasyon yapın."
+      "subtitle": "WhatsApp üzerinden rezervasyon yapın."
     },
     "hotelModal": {
-      "title": "Otelinizi seçin",
+      "title": "WhatsApp ile iletişim",
       "subtitle": "Otel seçildikten sonra hazır mesajla WhatsApp açılacaktır."
     },
     "servicesPage": {
       "eyebrow": "Uygulama menüsü",
       "title": "Spa hizmetleri",
-      "subtitle": "Temiz hizmet menüsü: uygulamayı seçin, detayları açın ve otelinizi seçtikten sonra rezervasyon yapın."
+      "subtitle": "Bir işlem seçin, detayları açın ve WhatsApp üzerinden doğrudan rezervasyon yapın."
     },
     "services": {
       "all": "Tümü",
       "duration": "Süre",
-      "detailsText": "Bu uygulama derin rahatlama, yenilenme ve konfor için hazırlanır. Detaylar ve uygun saat için otelinizi seçerek WhatsApp üzerinden bize ulaşın.",
+      "detailsText": "Bu uygulama derin rahatlama, yenilenme ve konfor için hazırlanır. Detaylar ve uygun saat için WhatsApp üzerinden bize ulaşın.",
       "includes": "İçerik",
       "choose": "Bu ritüeli seç"
     },
@@ -1900,7 +1900,7 @@ const translations = {
       "asianMassage": "Asya Masajı"
     },
     "wa": {
-      "general": "Merhaba! Spa Center Kemer’da spa hizmeti için rezervasyon yapmak istiyorum.",
+      "general": "Merhaba, Saint Star Kemer Hotel’de spa işlemi için rezervasyon yapmak istiyorum.",
       "service": "Hizmet",
       "hotel": "Otel"
     }
@@ -1922,12 +1922,12 @@ const translations = {
       "bookService": "Diesen Service buchen"
     },
     "hero": {
-      "eyebrow": "Hotel-Spa-Netzwerk in Kemer & Beldibi",
+      "eyebrow": "Hotel-Spa-Netzwerk in Saint Star Kemer Hotel",
       "title": "Premium Spa",
       "lead": "Mehr als 25 Jahre Erfahrung im Spa-Bereich. Komfort, Privatsphäre und hochwertige Erholung für jeden Gast.",
       "text": "Privates Hamam, professionelle Massagen und entspannende Körperpflege für Gäste ausgewählter Resort-Hotels an der Mittelmeerküste.",
       "noteTitle": "Täglich 08:00–20:30",
-      "noteText": "Wählen Sie Ihr Hotel und reservieren Sie mit einer Nachricht."
+      "noteText": "Reservieren Sie mit einer Nachricht über WhatsApp."
     },
     "stats": {
       "years": "Jahre Erfahrung",
@@ -1964,7 +1964,7 @@ const translations = {
     },
     "cta": {
       "title": "Bereit, heute zu entspannen?",
-      "subtitle": "Wählen Sie Ihr Hotel, senden Sie eine Nachricht, und wir helfen bei Behandlung und Uhrzeit."
+      "subtitle": "Senden Sie eine Nachricht, und wir helfen bei Behandlung und Uhrzeit."
     },
     "footer": {
       "text": "Premium-Spa-Netzwerk in Hotels in Kemer und Beldibi.",
@@ -1972,10 +1972,10 @@ const translations = {
     },
     "bar": {
       "title": "Bereit zum Entspannen?",
-      "subtitle": "Wählen Sie Ihr Hotel und buchen Sie per WhatsApp."
+      "subtitle": "Buchen Sie direkt per WhatsApp."
     },
     "hotelModal": {
-      "title": "Wählen Sie Ihr Hotel",
+      "title": "Kontakt über WhatsApp",
       "subtitle": "Nach der Auswahl öffnet sich WhatsApp mit einer vorbereiteten Nachricht."
     },
     "servicesPage": {
@@ -2025,7 +2025,7 @@ const translations = {
       "lead": "Ponad 25 lat doświadczenia w usługach spa. Komfort, prywatność i wysokiej jakości odpoczynek dla każdego gościa.",
       "text": "Prywatny hammam, profesjonalny masaż i pielęgnacja ciała dla gości wybranych hoteli nad Morzem Śródziemnym.",
       "noteTitle": "Codziennie 08:00–20:30",
-      "noteText": "Wybierz hotel i zarezerwuj jedną wiadomością."
+      "noteText": "Zarezerwuj jedną wiadomością przez WhatsApp."
     },
     "stats": {
       "years": "lat doświadczenia",
@@ -2062,7 +2062,7 @@ const translations = {
     },
     "cta": {
       "title": "Gotowy na relaks już dziś?",
-      "subtitle": "Wybierz hotel, wyślij jedną wiadomość, a pomożemy dobrać zabieg i godzinę."
+      "subtitle": "Wyślij jedną wiadomość, a pomożemy dobrać zabieg i godzinę."
     },
     "footer": {
       "text": "Premium sieć spa w hotelach Kemer i Beldibi.",
@@ -2070,10 +2070,10 @@ const translations = {
     },
     "bar": {
       "title": "Gotowy na relaks?",
-      "subtitle": "Wybierz hotel i zarezerwuj przez WhatsApp."
+      "subtitle": "Zarezerwuj bezpośrednio przez WhatsApp."
     },
     "hotelModal": {
-      "title": "Wybierz swój hotel",
+      "title": "Kontakt przez WhatsApp",
       "subtitle": "Po wyborze hotelu otworzy się WhatsApp z gotową wiadomością."
     },
     "servicesPage": {
@@ -2123,7 +2123,7 @@ const translations = {
       "lead": "أكثر من 25 عاماً في خدمات السبا.",
       "text": "الراحة والخصوصية والاسترخاء عالي الجودة لكل ضيف.",
       "noteTitle": "يومياً 08:00–20:30",
-      "noteText": "اختر الفندق واحجز برسالة واحدة."
+      "noteText": "احجز برسالة واحدة عبر واتساب."
     },
     "stats": {
       "years": "سنة خبرة",
@@ -2171,7 +2171,7 @@ const translations = {
       "subtitle": "اختر فندقك واحجز عبر واتساب."
     },
     "hotelModal": {
-      "title": "اختر الفندق",
+      "title": "تواصل عبر واتساب",
       "subtitle": "بعد الاختيار سيفتح واتساب برسالة جاهزة."
     },
     "servicesPage": {
@@ -2182,7 +2182,7 @@ const translations = {
     "services": {
       "all": "الكل",
       "duration": "المدة",
-      "detailsText": "هذا العلاج مصمم للاسترخاء العميق والتجدد والراحة. للتفاصيل والمواعيد المتاحة اختر الفندق وتواصل معنا عبر واتساب.",
+      "detailsText": "هذا العلاج مصمم للاسترخاء العميق والتجدد والراحة. للتفاصيل والمواعيد المتاحة تواصل معنا عبر واتساب.",
       "includes": "يشمل",
       "choose": "اختر هذا الطقس"
     },
@@ -2216,12 +2216,12 @@ const translations = {
       "bookService": "Réserver ce service"
     },
     "hero": {
-      "eyebrow": "Réseau spa hôtelier à Kemer & Beldibi",
+      "eyebrow": "Réseau spa hôtelier à Saint Star Kemer Hotel",
       "title": "Spa Premium",
       "lead": "Plus de 25 ans d’expérience dans les services spa. Confort, confidentialité et relaxation de qualité pour chaque client.",
       "text": "Hammam privé, massage expert et soins relaxants pour les clients d’hôtels sélectionnés sur la côte méditerranéenne.",
       "noteTitle": "Tous les jours 08:00–20:30",
-      "noteText": "Choisissez votre hôtel et réservez avec un seul message."
+      "noteText": "Réservez avec un seul message via WhatsApp."
     },
     "stats": {
       "years": "ans d’expérience",
@@ -2258,7 +2258,7 @@ const translations = {
     },
     "cta": {
       "title": "Prêt à vous détendre aujourd’hui ?",
-      "subtitle": "Choisissez votre hôtel, envoyez un message et nous vous aiderons à choisir le soin et l’heure."
+      "subtitle": "Envoyez un message et nous vous aiderons à choisir le soin et l’heure."
     },
     "footer": {
       "text": "Réseau spa premium dans les hôtels de Kemer et Beldibi.",
@@ -2266,10 +2266,10 @@ const translations = {
     },
     "bar": {
       "title": "Prêt à vous détendre ?",
-      "subtitle": "Choisissez votre hôtel et réservez via WhatsApp."
+      "subtitle": "Réservez directement via WhatsApp."
     },
     "hotelModal": {
-      "title": "Choisissez votre hôtel",
+      "title": "Contact via WhatsApp",
       "subtitle": "Après le choix de l’hôtel, WhatsApp s’ouvrira avec un message prêt."
     },
     "servicesPage": {
